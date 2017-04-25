@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, inital-scale=1.0" />
+	<title>Калькулятор</title>
+	
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/bootstrap.css" />
+	<link rel="stylesheet" href="css/style.css">
+	
+	<script src="JS/jquery-1.10.2.min.js"></script>
+	<script src="JS/bootstrap.js"></script>
+</head>
+<body>
+	
+	<div class="wrapper">
+		<header><h1>КАЛЬКУЛЯТОР</h1></header>
+		<div class="content">
+			<div class="container">
+
+				<form action="">
+					<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 form-text">
+						<input type="text" disabled value="" name="summ" placeholder="Введите операцию"/>
+					</div>
+					<div class="row button-box">
+						<button type="button" class="num" name="1">1</button>
+						<button type="button" class="num" name="2">2</button>
+						<button type="button" class="num" name="3">3</button>
+						<button type="button" class="num" name="4">4</button>
+						<button type="button" class="num" name="5">5</button>
+						<button type="button" class="num" name="6">6</button>
+						<button type="button" class="num" name="7">7</button>
+						<button type="button" class="num" name="8">8</button>
+						<button type="button" class="num" name="9">9</button>
+						<button type="button" class="num" name="0">0</button>
+					</div>
+					<div class="row operation-box">
+						<button type="button" name="+">+</button>
+						<button type="button" name="-">-</button>
+						<button type="button" name="*">*</button>
+						<button type="button" name="/">/</button>
+						<button type="button" name="sign">&#177;</button>
+						<button type="button" name="sq">&#8730;</button>
+						<button type="button" name="equal">=</button>
+						<button type="button" name="c">C</button>
+					</div>
+					
+				</form>
+				
+			</div>
+			
+		</div>
+		
+	</div>
+	
+	<script>
+		window.onload = function()
+		{
+	//-------------------------------------------------------------------------Цифры	
+			var summ = document.querySelector('input[name="summ"]'),
+				one = document.querySelector('button[name="1"]'),
+				two = document.querySelector('button[name="2"]'),
+				three = document.querySelector('button[name="3"]'),
+				four = document.querySelector('button[name="4"]'),
+				five = document.querySelector('button[name="5"]'),
+				six = document.querySelector('button[name="6"]'),
+				seven = document.querySelector('button[name="7"]'),
+				euth = document.querySelector('button[name="8"]'),
+				nine = document.querySelector('button[name="9"]'),
+				ten = document.querySelector('button[name="0"]'),
+	//==================================================================================
+	//-------------------------------------------------------------------------Операторы		
+				plus = document.querySelector('button[name="+"]'),
+				sub = document.querySelector('button[name="-"]'),
+				multiply = document.querySelector('button[name="*"]'),
+				divided = document.querySelector('button[name="/"]'),
+				equal = document.querySelector('button[name="equal"]'),
+				sign = document.querySelector('button[name="sign"]'),
+				square_root = document.querySelector('button[name="sq"]'),
+				clear = document.querySelector('button[name="c"]');
+	//================================================================================================
+	//-------------------------------------------------------------------------Клики по кнопкам (цифры)
+			one.onclick = function()
+				{
+					var name = this.name;
+					summ.value += name;
+				
+				console.log(summ.value);
+				}
+			
+			two.onclick = function()
+				{
+					var name = this.name;
+					summ.value += name;
+
+					console.log(summ.value);
+				}
+			
+			three.onclick = function()
+				{
+					var name = this.name;
+					summ.value += name;
+
+					console.log(summ.value);
+				}
+			
+			four.onclick = function()
+				{
+					var name = this.name;
+					summ.value += name;
+
+					console.log(summ.value);
+				}
+			
+			five.onclick = function()
+				{
+					var name = this.name;
+					summ.value += name;
+
+					console.log(summ.value);
+				}
+			
+			six.onclick = function()
+				{
+					var name = this.name;
+					summ.value += name;
+
+					console.log(summ.value);
+				}
+			
+			seven.onclick = function()
+				{
+					var name = this.name;
+					summ.value += name;
+
+					console.log(summ.value);
+				}
+			
+			euth.onclick = function()
+				{
+					var name = this.name;
+					summ.value += name;
+
+					console.log(summ.value);
+				}
+			
+			nine.onclick = function()
+				{
+					var name = this.name;
+					summ.value += name;
+
+					console.log(summ.value);
+				}
+			
+			ten.onclick = function()
+				{
+					var name = this.name;
+					summ.value += name;
+
+					console.log(summ.value);
+				}
+	//===================================================================================================
+	//-------------------------------------------------------------------------Клики по кнопкам (операции)
+			
+			plus.onclick = function()
+				{
+					var name = this.name;
+					summ.value += name;
+
+					console.log(summ.value);
+				}
+			
+			sub.onclick = function()
+				{
+					var name = this.name;
+					summ.value += name;
+
+					console.log(summ.value);
+				}
+			
+			multiply.onclick = function()
+				{
+					var name = this.name;
+					summ.value += name;
+
+					console.log(summ.value);
+				}
+			
+			divided.onclick = function()
+				{
+					var name = this.name;
+					summ.value += name;
+
+					console.log(summ.value);
+				}
+	//===================================================================================================
+	//-------------------------------------------------------------------------Выполнить выражение (равно)
+			equal.onclick = function()
+				{
+					var eq = eval(summ.value);
+						if(eq == "" || eq == undefined)
+							{
+								summ.placeholder = "Некорректные данные";
+							}
+						else
+							{
+								summ.value = eq;
+								console.log(summ.value);
+							}								
+				}
+	//======================================================================================
+	//-------------------------------------------------------------------------Очистить поле
+			clear.onclick = function()
+				{
+					summ.value = "";
+				}
+	//====================================================================================
+	//-------------------------------------------------------------------------Смена знака			
+			sign.onclick = function()
+				{
+					var eq = eval(summ.value);
+						if(eq == "" || eq == undefined || !Number(eq))
+							{
+								summ.placeholder = "Некорректные данные";
+							}
+						else
+							{
+								eq = eq - (eq * 2);
+								summ.value = eq;
+							}
+				}
+	//==========================================================================================
+	//-------------------------------------------------------------------------Квадратный корень		
+			square_root.onclick = function()
+				{
+					var eq = eval(summ.value);
+						if(eq == "" || eq == undefined || !Number(eq))
+							{
+								summ.placeholder = "Некорректные данные";
+							}
+						else
+							{
+								summ.value = Math.sqrt(eq);
+							}
+				}
+			
+		}
+	</script>
+</body>
+</html>

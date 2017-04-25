@@ -1,0 +1,532 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    height: 100%;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+    display: block;
+}
+body {
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    background: #2d1917 url(../images/repeat_bg.jpg) center 453px repeat-y;
+    line-height: 20px;
+    font-size: 16px;
+    font-family: Arial, Verdana, Helvetica, sans-serif;
+}
+.wrapper {
+    width: 100%;
+    min-width: 1000px;
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+}
+.h1 {
+    margin-bottom: 20px;
+}
+a {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+.wrapper {
+    width: 960px;
+    margin: 0 auto;
+}
+
+/* Header
+-----------------------------------------------------------------------------*/
+.header {
+    height: 270px;
+}
+.headContact{
+    overflow: hidden;
+}
+.wrapper .header .logo {
+    display: block;
+    float: left;
+    margin-left: -7px;
+    width: 122px;
+    height: 118px;
+    background: url(../images/logo.png) left top no-repeat;
+}
+.wrapper .header .title {
+    margin-top: 15px;
+    float: right;
+    width: 838px;
+    height: 102px;
+    background: url(../images/telefon.png) left top no-repeat;
+}
+.telefon {
+    position: absolute;
+    left: 414px;
+    top: -7px;
+    font-family: 'Unit-Slab';
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 46px;
+    color: #ff6a02;
+}
+.top_menu{
+    width:100%;
+    margin-top: 30px;
+}
+.top_menu ul li:first-child{
+    border-radius: 50px  0  0 50px;
+}
+.top_menu ul {
+    list-style: none;
+}
+.top_menu ul li{
+    float: left;
+    height: 80px;
+    border: 1px solid #e6e1d9;
+    border-right: none !important;
+    background: #f3eee5;
+}
+.top_menu ul li a {
+    display: block;
+    padding: 0px 14px;
+    font-size: 18px;
+    height: 80px;
+    line-height: 80px;
+    color: #383838;
+    font-family: 'Arial-Narrow';
+}
+.header .order {
+    border-radius: 0 50px 50px 0;
+    display: block;
+    float: left;
+    color: transparent;
+    font-size: 36px;
+    font-family: 'Unit-Slab';
+    line-height: 87px;
+    background-image: url(../images/order.png);
+    width: 257px;
+    height: 82px;
+    text-align: right;
+    text-indent: -10000px;
+    z-index: 10;
+}
+header .order:hover {
+    background-position: left bottom;
+}
+
+
+/* Middle
+-----------------------------------------------------------------------------*/
+.content {
+    padding: 0 0 332px;
+}
+.pizzaBuildWrap{
+    background-color: #fff;
+}
+.pizzaKind{
+    overflow:hidden;
+}
+.pizzaPhoto{
+    float:left;
+    width:48%;
+}
+.box-base{
+    float:left;
+    width:48%;
+    margin-left:4%;
+}
+.pizzaBuild .box{
+    overflow:hidden;
+}
+/* Сделай сам
+----------------------------------------------------------------*/
+.box-base h1{
+    font-family: "Arial-Narrow";
+    font-size: 44px;
+    line-height: normal;
+    margin: 38px 0;
+    color:#000;
+}
+.item-params-side {
+    font-size: 16px;
+    line-height: normal;
+    color: #5e5e5e;
+}
+.item-title {
+    font-family: "Arial-Narrow";
+    font-size: 44px;
+    line-height: normal;
+    margin: 38px 0;
+}
+.hide {
+    display: none;
+}
+.item-btns-cake label{
+    float: left;
+    margin-right: 20px;
+}
+.label-large {
+    background: url(../images/pizza-size-large.png) no-repeat 50% 0;
+    width: 60px;
+    height: 65px;
+}
+.item-radio-large:checked~.label-large {
+    background-position: 50% -65px;
+}
+.item-radio-mid:checked~.label-mid {
+    background-position: 50% -56px;
+}
+.label-mid {
+    background: url(../images/pizza-size-mid.png) no-repeat 50% 0;
+    width: 52px;
+    height: 56px;
+}
+.label-small {
+    background: url(../images/pizza-size-small.png) no-repeat 50% 0;
+    width: 44px;
+    height: 47px;
+}
+.item-radio-small:checked~.label-small {
+    background-position: 50% -47px;
+}
+/*Пицца сделай сам левая колонка
+--------------------------------------------------------------*/
+.cnstr-photo {
+    position: relative;
+}
+.cnstr-item-photo {
+    width: 80%;
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+/*
+---------------------------------------------------------------*/
+.label-americano, .label-italano, .label-hotdog{
+    width: 70px;
+    height: 52px;
+    display: inline-block;
+    opacity: 0.5;
+    cursor: pointer;
+}
+.item-radio-americano:checked~.label-americano {
+    opacity: 1;
+}
+.item-radio-italano:checked~.label-italano {
+    opacity: 1;
+}
+.item-radio-hotdog:checked~.label-hotdog {
+    opacity: 1;
+}
+.item-radio-souch-type1:checked~.label-souch-type1, .item-radio-souch-type2:checked~.label-souch-type2, .item-radio-souch-type3:checked~.label-souch-type3, .item-radio-souch-type4:checked~.label-souch-type4 {
+    opacity: 1;
+}
+.label-americano {
+    background: url(../images/item-americano.png) no-repeat 0 0;
+}
+.label-italano {
+    background: url(../images/item-italano.png) no-repeat 0 0;;
+}
+.label-hotdog {
+    background: url(../images/hotdog.png) no-repeat 0 0;
+}
+.label-souch-type1 {
+    background: url(/images/garlik.png) no-repeat 50% 0;
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    opacity: .5;
+    cursor: pointer;
+    background-size: contain;
+}
+.label-souch-type2 {
+    background: url(../images/ranch.png) no-repeat 50% 0;
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    opacity: .5;
+    cursor: pointer;
+    background-size: contain;
+}
+.label-souch-type3 {
+    background: url(../images/salsa.png) no-repeat 50% 0;
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    opacity: .5;
+    cursor: pointer;
+    background-size: contain;
+}
+.newlabel .label-souch-type4 {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    opacity: .5;
+    background: url(../images/bbq.png);
+    background-size: contain;
+    cursor: pointer;
+}
+
+/*-------------------------------------------------------------------------*/
+.pizzaIngreds h2, .addIngreds h2{
+    color: #000;
+}
+.pizzaIngreds{
+    overflow:hidden;
+}
+.ordPizzaIncl, .addIngreds {
+    width:46%;
+    float:left;
+    margin:0 2%;
+}
+.addit-type3, .addit-type2, .addit-type6, .addit-type5, .addit-type8{
+    width: 38px;
+    height: 38px;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+.addit-type3 {
+    background: url(../images/addit-types.png) no-repeat -100px 0;
+}
+.addit-type3.active {
+    background-position: -100px -42px;
+}
+.addit-type2 {
+    background: url(../images/addit-types.png) no-repeat -50px 0;
+}
+.addit-type2.active {
+    background-position: -50px -42px;
+}
+.addit-type6 {
+    background: url(../images/addit-types.png) no-repeat -248px 0;
+}
+.addit-type6.active {
+    background-position: -248px -42px;
+}
+.addit-type5 {
+    background: url(../images/addit-types.png) no-repeat -198px 0;
+}
+.addit-type5.active {
+    background-position: -198px -42px;
+}
+.addit-type8 {
+    background: url(../images/addit-types.png) no-repeat -346px 0;
+}
+.addit-type8.active {
+    background-position: -346px -42px;
+}
+.addit-item img {
+    max-width: 78px;
+    max-height: 52px;
+}
+.grid_composition {
+    overflow: hidden;
+}
+.grid-cl_1-4 {
+    width: 24.5%;
+    float: left;
+}
+.addit-item-weight {
+    color: #939393;
+}
+.addit-item-price {
+    color: #f37125;
+}
+.addit-item {
+    font-size: 13px;
+    color: #000;
+}
+/*-------------------------------
+Ваша пицца состоит из ----------------------------------------------------*/
+.composition-img {
+    cursor: pointer;
+}
+.sauce-base-select {
+    width: 85px;
+    font-size: 15px;
+    font-style: italic;
+}
+.grid_composition [class^=grid-cl] {
+    text-align: center;
+}
+/*---------------------------------------------------------------------------------*/
+.item-bottom-side {
+    padding-top: 15px;
+}
+.box-side {
+    float: left;
+}
+.item-link.bkm {
+    display: inline-block;
+    margin-left: 30px;
+}
+.item-link {
+    font-weight: bold;
+    color: #777;
+    text-decoration: underline;
+    display: inline-block;
+    vertical-align: middle;
+}
+.item-link.bkm:before {
+    content: '';
+    background: url(../images/ico-linkbkm.png) no-repeat 50% 50%;
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+.item-tocart {
+    background: #f37125;
+    font-size: 25px;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 10px;
+    padding: 12px 36px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+/*--------------------------------------------------------------------------*/
+.scrollup{
+    bottom: 55px;
+    display: inline;
+    right: 20px;
+    opacity: 1;
+    position: fixed;
+    z-index: 9;
+}
+/* Footer
+-----------------------------------------------------------------------------*/
+.footer {
+    margin: -332px auto 0;
+    min-width: 1000px;
+    height: 332px;
+    position: relative;
+    background-color: #241311;
+    color: #6f4435;
+}
+.footer_wrapper{
+    width: 960px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 50px 0 50px 0;
+}
+.footer a {
+    color: #6f4435;
+}
+.ftLogo{
+    float: left;
+}
+a.footer_logo {
+    display: inline-block;
+    width: 117px;
+    height: 113px;
+    background-image: url(../images/logo_footer.png);
+    float: left;
+    margin-right: 25px;
+}
+.fBlock{
+    float: left;
+}
+.bottom_menu{
+    overflow: hidden;
+}
+.bottom_menu li{
+    float: left;
+}
+.bottom_menu li{
+    height: 20px;
+    line-height: 20px;
+    margin-bottom: 35px;
+    margin-left: 10px;
+    list-style: none;
+}
+.bottom_menu li a {
+    float: left;
+    font-size: 18px;
+    font-family: 'Arial-Narrow';
+    color: #6f4435;
+    text-transform: uppercase;
+    border-bottom: 1px solid;
+    line-height: 18px;
+}
+.fBlock{
+    width: 700px;
+}
+.bottom_menu {
+    overflow: hidden;
+}
+.ftSocial ul li {
+    float: left;
+    margin-left: 9px;
+    list-style: none;
+}
+.info{
+    overflow: hidden;
+}
+.ftDelivery{
+    float: left;
+}
+.ftSocial{
+    float: right;
+}
+.social, .pizza_ps{
+    opacity: 0.3;
+}
+/*  Дополнительные начинки
+----------------------------------------------------------*/
+.addIngreds .grid-cl_1-4, .ordPizzaIncl .grid-cl_1-4{
+    position: relative;
+}
+.addIngreds .remove-ingredient, .ordPizzaIncl .remove-ingredient{
+    position: absolute;
+    right: 15px;
+    bottom: 0;
+    color: #e7061b;
+    border: solid 1px #e7061b;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    display: block;
+    font-size: 12px;
+    z-index: 10;
+    cursor: pointer;
+}
+.addIngreds .remove-ingredient, .addIngreds .count-ingredient{
+    display:none;
+}
+.ordPizzaIncl .remove-ingredient, .ordPizzaIncl .count-ingredient{
+    display:block;
+}
+.ordPizzaIncl .addit-item-price, .ordPizzaIncl .addit-item-weight{
+    display:none;
+}
+
+.count-ingredient {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: solid 2px #fff;
+    color: #fff;
+    font-size: 12px;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    padding-top: 3px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background: #e7061b;
+    border-radius: 50%;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, .2);
+}
+
+
+/* заказ и кнопка Корзина
+---------------------------------------------------------*/
+.item-order {
+    color:#000;
+}
